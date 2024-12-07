@@ -1,0 +1,11 @@
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+button{
+    border: none;
+    background-color: rgb(94, 153, 230);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
