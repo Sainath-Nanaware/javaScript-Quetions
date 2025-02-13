@@ -158,16 +158,18 @@ for (let num of arr) {
       const arr1 = [10, 50, 66, 98, 21, 55];
       const arr2 = [5, 50, 88, 21, 78, 55];
 
-      var union = [];
-      union=arr1
-      for (let num2 of arr2) {
-        for (let num of union){
-            if(num!=num2){
-                union.push(num)
-            }
+      var newArr = [];
+      for (let num of arr1){
+        if(!newArr.includes(num)){
+            newArr.push(num)
         }
       }
 
-      console.log("union of array:", union);
+       for (let num of arr2) {
+         if (!newArr.includes(num)) {
+           newArr.push(num);
+         }
+       }
+      console.log("union of array:", newArr);
     };
     unionWithoutSet();
