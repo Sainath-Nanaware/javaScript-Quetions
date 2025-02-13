@@ -122,7 +122,7 @@ for (let num of arr) {
     // Find Intersection and Union of Two Arrays:(Using set)
 
 
-    const union=()=>{
+    /*const union=()=>{
         const arr1=[10,50,66,98,21,55]
         const arr2=[5,50,88,21,78,55]
         const union=new Set();
@@ -172,4 +172,21 @@ for (let num of arr) {
        }
       console.log("union of array:", newArr);
     };
-    unionWithoutSet();
+    unionWithoutSet();*/
+    //************************************************************************************
+
+    // Rotate an Array by K Positions
+
+    const rotateArray=()=>{
+        const arr=[20,25,88,99,87,54,66,24]
+        const kPoint=1
+        for(let i=0;i<arr.length;i++){
+            if(i<=kPoint){
+                let shiftElement=arr.shift()
+                arr.push(shiftElement)
+            }
+        }
+        console.log("final array:",arr);
+        
+    }
+    rotateArray()
