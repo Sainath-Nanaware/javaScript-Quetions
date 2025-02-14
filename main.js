@@ -193,18 +193,47 @@ for (let num of arr) {
   //************************************************************************************* */
 //  Remove Duplicates Without Using Set
 
-  const removeDublicates=()=>{
-    const arr=[12,55,88,77,98,65,88,65,12,10]
-    const newArray=[]
-    for (let num of arr){
-        if(!newArray.includes(num)){
-          newArray.push(num)
-        }
-      }
-      console.log("new Array:",newArray);
+  // const removeDublicates=()=>{
+  //   const arr=[12,55,88,77,98,65,88,65,12,10]
+  //   const newArray=[]
+  //   for (let num of arr){
+  //       if(!newArray.includes(num)){
+  //         newArray.push(num)
+  //       }
+  //     }
+  //     console.log("new Array:",newArray);
       
+  // }
+
+  // removeDublicates()
+
+//    Find the Second Largest Element in an Array
+//by sorting:
+
+// function findLarge(arr){
+//   const sortArray=arr.sort()
+//   console.log(sortArray);
+//   console.log("second large element:",sortArray[1]);
+// }
+// const arr=[10,55,87,66,95,20]
+// findLarge(arr)
+
+//without sorting:
+
+function findLarge(arr) {
+  var large=0
+  var sLarge=0
+  for(let i=0;i<arr.length;i++){
+    for(let num of arr){
+      if(arr[i]>large){
+        sLarge=large
+        large=arr[i]
+      }
+    }
   }
-
-  removeDublicates()
-
-
+  console.log(arr.sort());
+  console.log("second large",sLarge);
+  
+}
+const arr = [10, 55, 87, 66, 95, 20];
+findLarge(arr);
