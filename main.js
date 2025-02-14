@@ -177,16 +177,34 @@ for (let num of arr) {
 
     // Rotate an Array by K Positions
 
-    const rotateArray=()=>{
-        const arr=[20,25,88,99,87,54,66,24]
-        const kPoint=1
-        for(let i=0;i<arr.length;i++){
-            if(i<=kPoint){
-                let shiftElement=arr.shift()
-                arr.push(shiftElement)
-            }
-        }
-        console.log("final array:",arr);
+    // const rotateArray=()=>{
+    //     const arr=[20,25,88,99,87,54,66,24]
+    //     const kPoint=1
+    //     for(let i=0;i<arr.length;i++){
+    //         if(i<=kPoint){
+    //             let shiftElement=arr.shift()
+    //             arr.push(shiftElement)
+    //         }
+    //     }
+    //     console.log("final array:",arr);
         
-    }
-    rotateArray()
+    // }
+    // rotateArray()
+  //************************************************************************************* */
+//  Remove Duplicates Without Using Set
+
+  const removeDublicates=()=>{
+    const arr=[12,55,88,77,98,65,88,65,12,10]
+    const newArray=[]
+    for (let num of arr){
+        if(!newArray.includes(num)){
+          newArray.push(num)
+        }
+      }
+      console.log("new Array:",newArray);
+      
+  }
+
+  removeDublicates()
+
+
