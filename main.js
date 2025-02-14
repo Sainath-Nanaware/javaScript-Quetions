@@ -224,16 +224,16 @@ function findLarge(arr) {
   var large=0
   var sLarge=0
   for(let i=0;i<arr.length;i++){
-    for(let num of arr){
+   
       if(arr[i]>large){
         sLarge=large
         large=arr[i]
-      }
+
     }
   }
-  console.log(arr.sort());
+  console.log(arr.sort((a,b)=>a-b));
   console.log("second large",sLarge);
   
 }
-const arr = [10, 55, 87, 66, 95, 20];
+const arr = [10, 55, 87,558, 66,95,40,88,552,875,2];
 findLarge(arr);
