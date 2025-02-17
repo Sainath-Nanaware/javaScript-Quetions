@@ -220,20 +220,53 @@ for (let num of arr) {
 
 //without sorting:
 
-function findLarge(arr) {
-  var large=0
-  var sLarge=0
-  for(let i=0;i<arr.length;i++){
+// function findLarge(arr) {
+//   var large=0
+//   var sLarge=0
+//   for(let i=0;i<arr.length;i++){
    
-      if(arr[i]>large){
-        sLarge=large
-        large=arr[i]
+//       if(arr[i]>large){
+//         sLarge=large
+//         large=arr[i]
 
+//     }
+//   }
+//   console.log(arr.sort((a,b)=>a-b));
+//   console.log("second large",sLarge);
+  
+// }
+// const arr = [10, 55, 87,558, 66,95,40,88,88,552,875,88,2,88];
+// findLarge(arr);
+
+
+//Find the majority element in an array.
+
+const selectElement=(arr)=>{
+  var frequencyMap={}
+  for(let i=0;i<arr.length;i++){
+    var count=0
+    for (let num of arr) {
+        if(arr[i]==num){
+          count++
+        }
+    }
+    frequencyMap[arr[i]]=count
+  }
+  var max=0
+  var maxElement
+  for(let [key,value] of Object.entries(frequencyMap)){
+    if(value>max){
+      max=value
+      maxElement=key
     }
   }
-  console.log(arr.sort((a,b)=>a-b));
-  console.log("second large",sLarge);
+  console.log(frequencyMap);
   
+  console.log("most frequent element in array:",maxElement);
+
+  
+
 }
-const arr = [10, 55, 87,558, 66,95,40,88,552,875,2];
-findLarge(arr);
+
+const arr=[20,50,20,88,90,20,66,66,325,66,66]
+selectElement(arr)
