@@ -274,17 +274,5 @@ const arr=[20,50,20,88,90,20,66,66,325,66,66]
 
 //Implement a function that removes falsy values from an array.
 
-function cleanArray(arr){
-  console.log(arr)
-  var cleanArray=[]
-  for(let num of arr){
-      if (num) {
-        cleanArray.push(num)
-      }
-  }
-  console.log("clean array",cleanArray);
-  
-}
 
 
-cleanArray([0, 1, false, 2, "", 3, "hello", null, undefined, NaN]);
