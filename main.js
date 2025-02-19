@@ -241,38 +241,56 @@ for (let num of arr) {
 
 //Find the majority element in an array.
 
-const selectElement=(arr)=>{
-  var frequencyMap={}
-  for(let i=0;i<arr.length;i++){
-    var count=0
-    for (let num of arr) {
-        if(arr[i]==num){
-          count++
-        }
-    }
-    frequencyMap[arr[i]]=count
-  }
-  var max=0
-  var maxElement
-  for(let [key,value] of Object.entries(frequencyMap)){
-    if(value>max){
-      max=value
-      maxElement=key
-    }
-  }
-  console.log(frequencyMap);
+// const selectElement=(arr)=>{
+//   var frequencyMap={}
+//   for(let i=0;i<arr.length;i++){
+//     var count=0
+//     for (let num of arr) {
+//         if(arr[i]==num){
+//           count++
+//         }
+//     }
+//     frequencyMap[arr[i]]=count
+//   }
+//   var max=0
+//   var maxElement
+//   for(let [key,value] of Object.entries(frequencyMap)){
+//     if(value>max){
+//       max=value
+//       maxElement=key
+//     }
+//   }
+//   console.log(frequencyMap);
   
-  console.log("most frequent element in array:",maxElement);
+//   console.log("most frequent element in array:",maxElement);
 
   
 
-}
+// }
 
-const arr=[20,50,20,88,90,20,66,66,325,66,66]
-//selectElement(arr)
+// const arr=[20,50,20,88,90,20,66,66,325,66,66]
+// //selectElement(arr)
 
 
 //Implement a function that removes falsy values from an array.
 
 
+/*
+*
+**
+***
+****
+*****
+*/
+
+
+function pattern(){
+  for(var i=0;i<5;i++){
+    for(var j=0;j<=i;j++){
+      console.log("hii");
+      console.log(j)
+    }
+  }
+}
+pattern()
 
