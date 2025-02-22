@@ -284,13 +284,25 @@ for (let num of arr) {
 */
 
 
-function pattern(){
-  for(var i=0;i<5;i++){
-    for(var j=0;j<=i;j++){
-      console.log("hii");
-      console.log(j)
-    }
+// function pattern(){
+//   for(var i=0;i<5;i++){
+//     for(var j=0;j<=i;j++){
+//       console.log("hii");
+//       console.log(j)
+//     }
+//   }
+// }
+// pattern()
+
+//Write a function to check if a number is a power of 2.
+
+function powerOf2(a){
+  if(a%2==0){
+    console.log("Number is power of two");
+    
+  }else{
+    console.log("Number is not power of two");
   }
 }
-pattern()
 
+powerOf2(50)
