@@ -305,4 +305,21 @@ function powerOf2(a){
   }
 }
 
-powerOf2(50)
+// powerOf2(50)
+
+
+
+//closure example:
+
+const closure=()=>{
+  let count=0
+  return increaseCount=()=>{
+      count++
+      return count
+  }
+
+}
+const counter=closure()
+console.log(counter())
+console.log(counter())
+console.log(counter())
