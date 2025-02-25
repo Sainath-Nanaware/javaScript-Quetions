@@ -319,7 +319,17 @@ const closure=()=>{
   }
 
 }
-const counter=closure()
-console.log(counter())
-console.log(counter())
-console.log(counter())
+// const counter=closure()
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+
+
+
+function timer(){
+  setInterval(()=>{
+    console.log("euu")
+  },5000)
+}
+timer()
+console.log("Hiii");
