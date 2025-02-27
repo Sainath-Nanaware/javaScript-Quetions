@@ -50,7 +50,7 @@ findCount(str.toLowerCase())
 
 
 //Find the Longest Word
-
+/*
 const findLongestStr=(str)=>{
     const splitStr=str.split(' ')
     console.log(splitStr);
@@ -73,3 +73,75 @@ const findLongestStr=(str)=>{
 // const str="I am programmer"
 const str="namha parvati pate har har mahadev"
 findLongestStr(str)
+*/
+
+
+//Capitalize First Letter of Each Word
+
+const capitalize=(str)=>{
+    const splitStr=str.split(' ')
+    console.log(splitStr);
+    var wordsArray=[]
+    for(let str of splitStr){
+        let capitalizeWord=str.replace(str[0],str[0].toUpperCase())
+        console.log(capitalizeWord);
+        wordsArray.push(capitalizeWord)
+    }
+    var finalString=wordsArray.join(' ')
+    console.log("output=",finalString);    
+}
+
+
+
+
+
+
+str="hellow sadha bhau"
+
+capitalize(str)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+NOTE:
+    1]Traverse of map:(using for in )
+                for (let key in frequencyMap) {
+                    if (frequencyMap[key] > max) {
+                        max = frequencyMap[key];
+                        longestWord = key;
+                    }
+                }
+
+
+*/
