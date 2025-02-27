@@ -28,7 +28,7 @@ checkPallindrom(str1.toLowerCase())
 */
 
 // Count Vowels and Consonants
-
+/*
 const findCount=(str)=>{
     var vovelCount=0
     var constantCount=0
@@ -46,3 +46,30 @@ const findCount=(str)=>{
 // const str="AeioU"
 
 findCount(str.toLowerCase())
+*/
+
+
+//Find the Longest Word
+
+const findLongestStr=(str)=>{
+    const splitStr=str.split(' ')
+    console.log(splitStr);
+    let frequencyMap={}
+    var max=0;
+    var logestWord=''
+    for(let word of splitStr){
+        frequencyMap[word]=(frequencyMap[word] || word.length)
+         if (frequencyMap[word] >=max) {
+           max = frequencyMap[word];
+           logestWord=word
+         }
+    }
+    console.log(frequencyMap);
+    
+    console.log("logest word in string are="+logestWord);
+
+}
+
+// const str="I am programmer"
+const str="namha parvati pate har har mahadev"
+findLongestStr(str)
