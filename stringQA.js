@@ -100,7 +100,20 @@ str="hellow sadha bhau"
 
 capitalize(str)
 
+/*
+6.Character Frequency
+    charFrequency("hello"); // Output: { h: 1, e: 1, l: 2, o: 1 }
+7.Remove Duplicates
+    removeDuplicates("programming"); // Output: "progamin"
+8.Check Anagram
+    isAnagram("listen", "silent"); // Output: true
+    isAnagram("hello", "world");   // Output: false
+9.Replace Character
+    replaceChar("banana", "a", "o"); // Output: "bonono"
+10.String Compression
+    compressString("aaabbccc"); // Output: "a3b2c3"
 
+*/
 
 
 
