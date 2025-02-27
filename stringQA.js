@@ -1,16 +1,16 @@
 //Reverse given string 
 
-
+/*
 const reverseString=(str)=>{
     const reverseStr=str.split('').reverse().join('')
     console.log(reverseStr);
 }
 const str="aplaBhau"
 // reverseString(str)
-
+*/
 
 //Palindrom of string 
-
+/*
 const checkPallindrom=(str)=>{
     // const oldString=str
     const reverseString=str.split('').reverse().join('')
@@ -25,3 +25,24 @@ const checkPallindrom=(str)=>{
 
 const str1="madAM"
 checkPallindrom(str1.toLowerCase())
+*/
+
+// Count Vowels and Consonants
+
+const findCount=(str)=>{
+    var vovelCount=0
+    var constantCount=0
+    for(let i=0;i<str.length;i++){
+        if(str[i]=='a' || str[i]=='e' || str[i]=='i'|| str[i]=='o'|| str[i]=='u'){
+            vovelCount++;
+        }else{
+            constantCount++
+        }
+    }
+    console.log("vovels:"+vovelCount+" and constant:"+constantCount);
+    
+}
+// const str="Itshaala"
+// const str="AeioU"
+
+findCount(str.toLowerCase())
