@@ -331,5 +331,17 @@ function timer(){
     console.log("euu")
   },5000)
 }
-timer()
-console.log("Hiii");
+// timer()
+// console.log("Hiii");
+
+
+function reverseString(str){
+  const reverse=str.split('').reverse().join('')
+  console.log(reverse);
+  const status=reverse.includes('d')
+  console.log(status);
+  
+  
+}
+reverseString('nadJS')
+
