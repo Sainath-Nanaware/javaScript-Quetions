@@ -99,7 +99,7 @@ capitalize(str)*/
 6.Character Frequency
     charFrequency("hello"); // Output: { h: 1, e: 1, l: 2, o: 1 }
 */
-
+/*
 function countFrequency(str){
     let frequencyMap={}
     for(let char of str){
@@ -109,14 +109,39 @@ function countFrequency(str){
 }
 const str="Ramayanr"
 countFrequency(str)
-
-
-
+*/
 
 
 /*
 7.Remove Duplicates
     removeDuplicates("programming"); // Output: "progamin"
+*/
+
+function removeDuplicate(str){
+    const charSet=new Set()
+    var i=0
+    var newStr='';
+    const interator=charSet.values();
+    for(let char of str){
+        charSet.add(char)
+        
+    }
+    const charArray=[...charSet]
+    for(let char of charArray){
+        newStr=newStr+char
+    }
+    console.log(newStr);
+    
+}
+
+
+// const str="Programming"
+const str="Gagantaram"
+removeDuplicate(str)
+
+
+
+/*
 8.Check Anagram
     isAnagram("listen", "silent"); // Output: true
     isAnagram("hello", "world");   // Output: false
