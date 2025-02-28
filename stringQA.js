@@ -77,7 +77,7 @@ findLongestStr(str)
 
 
 //Capitalize First Letter of Each Word
-
+/*
 const capitalize=(str)=>{
     const splitStr=str.split(' ')
     console.log(splitStr);
@@ -91,18 +91,30 @@ const capitalize=(str)=>{
     console.log("output=",finalString);    
 }
 
-
-
-
-
-
 str="hellow sadha bhau"
 
-capitalize(str)
+capitalize(str)*/
 
 /*
 6.Character Frequency
     charFrequency("hello"); // Output: { h: 1, e: 1, l: 2, o: 1 }
+*/
+
+function countFrequency(str){
+    let frequencyMap={}
+    for(let char of str){
+        frequencyMap[char]=(frequencyMap[char]||0)+1
+    }
+    console.log("Frequency Map:",frequencyMap)
+}
+const str="Ramayanr"
+countFrequency(str)
+
+
+
+
+
+/*
 7.Remove Duplicates
     removeDuplicates("programming"); // Output: "progamin"
 8.Check Anagram
