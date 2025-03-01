@@ -116,7 +116,7 @@ countFrequency(str)
 7.Remove Duplicates
     removeDuplicates("programming"); // Output: "progamin"
 */
-
+/*
 function removeDuplicate(str){
     const charSet=new Set()
     var i=0
@@ -134,17 +134,52 @@ function removeDuplicate(str){
     
 }
 
-
 // const str="Programming"
 const str="Gagantaram"
 removeDuplicate(str)
-
+*/
 
 
 /*
 8.Check Anagram
     isAnagram("listen", "silent"); // Output: true
     isAnagram("hello", "world");   // Output: false
+*/
+
+
+const isAnagram=(str1,str2)=>{
+    if(str1.length!=str2.length){
+        console.log("It's not anagram")
+        return
+    }
+   const stringSet=new Set()
+    for(let char of str1){
+        stringSet.add(char)
+    }
+    for (let char of str2) {
+        stringSet.add(char);
+        
+    }
+    console.log(stringSet);
+
+    if(str1.length===stringSet.size){
+         console.log("It's anagram");
+
+    }else{
+        console.log("It's not anagram");
+        
+    }
+    
+}
+    // const str1="listen"
+    // const str2="silent"
+    const str1="Madam"
+    const str2="Adama"
+    isAnagram(str1,str2)
+
+
+
+/*
 9.Replace Character
     replaceChar("banana", "a", "o"); // Output: "bonono"
 10.String Compression
