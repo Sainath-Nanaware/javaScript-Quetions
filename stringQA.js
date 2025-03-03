@@ -183,6 +183,7 @@ const isAnagram=(str1,str2)=>{
 9.Replace Character
     replaceChar("banana", "a", "o"); // Output: "bonono"
 */
+/*
 function replaceChar(str, char1, char2){
     // console.log(str,char1,char2)
     const result=str.replaceAll(char1,char2)
@@ -190,6 +191,7 @@ function replaceChar(str, char1, char2){
     
 }
 replaceChar("banana","a","o")
+*/
 
 
 /*
@@ -197,7 +199,23 @@ replaceChar("banana","a","o")
     compressString("aaabbccc"); // Output: "a3b2c3"
 
 */
+const compressString=(str)=>{
+    var frequencyMap={}
+    var compressStr=''
+    for( let char of str){
+        frequencyMap[char]=(frequencyMap[char] || 0)+1;
+    }
+    console.log(frequencyMap);
+    for(let key in frequencyMap){
+        console.log(key);
+        compressStr=compressStr+key+frequencyMap[key]
+    }
+    console.log(compressStr);
+    
+}
 
+
+compressString("aaaaavvvvsssshhhppp")
 
 
 
