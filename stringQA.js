@@ -146,7 +146,7 @@ removeDuplicate(str)
     isAnagram("hello", "world");   // Output: false
 */
 
-
+/*
 const isAnagram=(str1,str2)=>{
     if(str1.length!=str2.length){
         console.log("It's not anagram")
@@ -173,16 +173,27 @@ const isAnagram=(str1,str2)=>{
 }
     // const str1="listen"
     // const str2="silent"
-    const str1="Madam"
-    const str2="Adama"
+    const str1="MaaN"
+    const str2="NaaM"
     isAnagram(str1,str2)
 
-
+*/
 
 /*
 9.Replace Character
     replaceChar("banana", "a", "o"); // Output: "bonono"
-10.String Compression
+*/
+function replaceChar(str, char1, char2){
+    // console.log(str,char1,char2)
+    const result=str.replaceAll(char1,char2)
+    console.log(result);
+    
+}
+replaceChar("banana","a","o")
+
+
+/*
+    10.String Compression
     compressString("aaabbccc"); // Output: "a3b2c3"
 
 */
