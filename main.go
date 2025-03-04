@@ -75,6 +75,7 @@ func main(){
 		  4 4 4 4		
 	*/
 
+/*
 package main
 
 import(
@@ -93,5 +94,44 @@ func main(){
 			fmt.Print(" ",i);
 		} 
 		fmt.Println()
+	}
+}
+*/
+//Patern 4:
+	/*
+			1
+		    01
+		    101
+		  	0101
+			10101		
+	*/
+
+package main
+
+import(
+	"fmt"
+)
+
+func main(){
+	var i int=0
+	var j int=0
+	for i=1;i<=5;i++{
+		for j=1;j<=i;j++{
+			if(i%2==0){
+				if(j%2==0){
+					fmt.Print(1)
+				}else{
+					fmt.Print(0)
+				}
+			}
+			if(i%2!=0){
+				if(j%2==0){
+					fmt.Print(0)
+				}else{
+					fmt.Print(1)
+				}
+			}
+		}	
+			fmt.Println()
 	}
 }
