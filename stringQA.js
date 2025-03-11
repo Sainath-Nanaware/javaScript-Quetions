@@ -199,23 +199,49 @@ replaceChar("banana","a","o")
     compressString("aaabbccc"); // Output: "a3b2c3"
 
 */
-const compressString=(str)=>{
-    var frequencyMap={}
-    var compressStr=''
-    for( let char of str){
-        frequencyMap[char]=(frequencyMap[char] || 0)+1;
+// const compressString=(str)=>{
+//     var frequencyMap={}
+//     var compressStr=''
+//     for( let char of str){
+//         frequencyMap[char]=(frequencyMap[char] || 0)+1;
+//     }
+//     console.log(frequencyMap);
+//     for(let key in frequencyMap){
+//         console.log(key);
+//         compressStr=compressStr+key+frequencyMap[key]
+//     }
+//     console.log(compressStr);
+    
+// }
+
+
+// compressString("aaaaavvvvsssshhhppp")
+
+//Remove dublicate characters from string 
+
+function removeDublicate(str){
+    const charSet=new Set()
+
+    for(let char of str){
+        charSet.add(char)
     }
-    console.log(frequencyMap);
-    for(let key in frequencyMap){
-        console.log(key);
-        compressStr=compressStr+key+frequencyMap[key]
+    // console.log(charSet);
+    var newStr=''
+    for(let element of charSet){
+        console.log(element);
+        newStr=newStr+element;
     }
-    console.log(compressStr);
+    console.log(str);
+    
+    console.log("output:",newStr);
+    
     
 }
 
 
-compressString("aaaaavvvvsssshhhppp")
+const str="Applaee"
+
+removeDublicate(str)
 
 
 
