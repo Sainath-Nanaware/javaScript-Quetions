@@ -218,7 +218,7 @@ replaceChar("banana","a","o")
 // compressString("aaaaavvvvsssshhhppp")
 
 //Remove dublicate characters from string 
-
+/*
 function removeDublicate(str){
     const charSet=new Set()
 
@@ -242,8 +242,34 @@ function removeDublicate(str){
 const str="Applaee"
 
 removeDublicate(str)
+*/
+
+// Find the First and all Non-Repeating Character
 
 
+const findNonRepeatChar=(str)=>{
+    var frequencyMap={}
+    for(let char of str){
+        frequencyMap[char]=(frequencyMap[char]||0)+1
+    }
+    console.log(frequencyMap);
+    for(let key in frequencyMap){
+      // console.log(key);
+      //fnind first non repeat charecter in string
+      // if(frequencyMap[key]==1){
+      //     console.log("First non redundant charecter:",key);
+      //     break
+      // }
+      //find all non repeat charecter in string
+      if(frequencyMap[key]==1){
+          console.log("non redundant charecter:",key);
+      }
+    }
+    
+}
+
+const str="aabccdeer"
+findNonRepeatChar(str)
 
 
 

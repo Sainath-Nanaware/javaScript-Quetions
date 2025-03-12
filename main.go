@@ -106,6 +106,7 @@ func main(){
 			10101		
 	*/
 
+/*
 package main
 
 import(
@@ -135,3 +136,6 @@ func main(){
 			fmt.Println()
 	}
 }
+*/
+
+package main
