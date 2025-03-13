@@ -245,8 +245,7 @@ removeDublicate(str)
 */
 
 // Find the First and all Non-Repeating Character
-
-
+/*
 const findNonRepeatChar=(str)=>{
     var frequencyMap={}
     for(let char of str){
@@ -271,6 +270,28 @@ const findNonRepeatChar=(str)=>{
 const str="aabccdeer"
 findNonRepeatChar(str)
 
+*/
+
+/*
+Question: Find the longest common prefix among an array of strings.
+Example Input: ["flower", "flow", "flight"]
+Example Output: "fl"
+*/
+
+
+function findPrefix(arr){
+    var p=0
+    for(let i=0;i<=arr.length;i++){
+        for(let i=0;i<=arr[p].length;i++){
+            
+        }
+    }
+}
+
+
+
+const arr = ["flower", "flow", "flight"];
+findPrefix(arr)
 
 
 
