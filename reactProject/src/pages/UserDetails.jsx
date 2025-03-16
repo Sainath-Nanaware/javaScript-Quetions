@@ -2,14 +2,15 @@ import React from 'react'
 
 function UserDetails() {
   return (
-    <div className='pb h-[100vh] flex flex-col justify-center items-center gap-[20px]'>
+    <div className='pb h-[100vh] flex flex-col justify-center items-center gap-[10px]'>
         <h1 className='font-semibold text-3xl'>User Registration</h1>
-      <div className='pb flex flex-col justify-center items-start gap-[10px] p-[20px]'>
-        <input type="text" name='FullName' placeholder='Enter Full Name:' className='border-b-orange-50 p-[6px] w-[30vw]' />
-        <input type="email" name='Email' placeholder='Enter email:' className='pb p-[6px] w-[30vw]' />
-        <input type="text" name='Address' placeholder='Enter address:' className='pb p-[6px] w-[30vw]' />
-        <input type="text" name='Phone no' placeholder='Enter phone number:' className='pb p-[6px] w-[30vw]' />
-
+      <div className=' flex flex-col justify-center items-center gap-[10px] p-[20px]'>
+        <input type="text" name='FullName' placeholder='Enter Full Name:' className='border-green-400 border-2  rounded-[5px] p-[6px] w-[30vw]' />
+        <input type="email" name='Email' placeholder='Enter email:' className='border-green-400 border-2  rounded-[5px] p-[6px] w-[30vw]' />
+        <input type="text" name='Address' placeholder='Enter address:' className='border-green-400 border-2  rounded-[5px] p-[6px] w-[30vw]' />
+        <input type="text" name='Phone no' placeholder='Enter phone number:' className='border-green-400 border-2  rounded-[5px] p-[6px] w-[30vw]' />
+        <input type="password" name='Password' placeholder='Create password:' className='border-green-400 border-2  rounded-[5px] p-[6px] w-[30vw]' />
+        <button className='p-[5px]  text-green-600 font-semibold rounded-xl border-2 border-green-500 hover:bg-green-500 hover:text-white w-[8vw]' onClick={()=>{navigate('/userDetails')}}>Submit </button>
       </div>
     </div>
   )
