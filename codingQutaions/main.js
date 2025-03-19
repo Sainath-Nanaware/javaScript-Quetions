@@ -345,17 +345,44 @@ const closure=()=>{
 // }
 // reverseString('nadJS')
 
-const reverseArr=(arr,k)=>{
+// const reverseArr=(arr,k)=>{
 
+//   for(let i=0;i<arr.length;i++){
+//     if(i===k)break;
+//     let element=arr.shift()
+//     arr.push(element)
+//   }
+//   console.log(arr);
+// }
+
+// //reverse array k point 
+
+// const arr=[10,50,80,9,66,87]
+// reverseArr(arr,2)
+
+
+//move 0 strting points
+
+
+
+function modifyArray(arr){
+  let count=0
   for(let i=0;i<arr.length;i++){
-    if(i===k)break;
-    let element=arr.shift()
-    arr.push(element)
+    let num=arr.shift()
+    if(num===0){
+      count++;
+    }else{
+      arr.push(num)
+    }
+  }  
+  for(let i=0;i<=count;i++){
+    arr.push(0)
   }
-  console.log(arr);
+console.log(arr);
+
+
 }
 
-//reverse array k point 
+const arr=[0,55,88,99,0,55,0,58,0]
 
-const arr=[10,50,80,9,66,87]
-reverseArr(arr,2)
+modifyArray(arr)
