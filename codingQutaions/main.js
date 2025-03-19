@@ -326,22 +326,36 @@ const closure=()=>{
 
 
 
-function timer(){
-  setInterval(()=>{
-    console.log("euu")
-  },5000)
-}
-// timer()
-// console.log("Hiii");
+// function timer(){
+//   setInterval(()=>{
+//     console.log("euu")
+//   },5000)
+// }
+// // timer()
+// // console.log("Hiii");
 
 
-function reverseString(str){
-  const reverse=str.split('').reverse().join('')
-  console.log(reverse);
-  const status=reverse.includes('d')
-  console.log(status);
+// function reverseString(str){
+//   const reverse=str.split('').reverse().join('')
+//   console.log(reverse);
+//   const status=reverse.includes('d')
+//   console.log(status);
   
   
-}
-reverseString('nadJS')
+// }
+// reverseString('nadJS')
 
+const reverseArr=(arr,k)=>{
+
+  for(let i=0;i<arr.length;i++){
+    if(i===k)break;
+    let element=arr.shift()
+    arr.push(element)
+  }
+  console.log(arr);
+}
+
+//reverse array k point 
+
+const arr=[10,50,80,9,66,87]
+reverseArr(arr,2)
