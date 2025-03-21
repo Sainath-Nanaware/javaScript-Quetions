@@ -1,15 +1,12 @@
 import React, { useRef, useState } from 'react'
 
 function AddItems() {
-    var SKILLS=[]
     const [inputText,setInputText]=useState('N/A')
     const [skills,SetSkills]=useState([])
     const inputRef=useRef()
     function handleAddEvent(){
-        SKILLS.push(inputRef.current.value)
-        SetSkills(SKILLS)
-        console.log(SKILLS);
-        inputRef.current.value='' 
+        SetSkills((prev)=>[...prev,inputRef.current.value])
+        // inputRef.current.value='' 
          setInputText('N/A')
     }
   return (
@@ -22,7 +19,9 @@ function AddItems() {
             <button className='w-[8vw] p-[5px] rounded-3xl bg-green-500' onClick={()=>{handleAddEvent()}}>Add</button>
         </div>
         <div className='pb h-[20vh] w-[50vw] flex justify-center items-center'>
-            <p className=' w-[40vw] p-[12px]'>Your Skill List:{skills}</p>
+            <p className=' w-[40vw] p-[12px]'>Your Skill List:{skills.map((element,index)=>{
+                        return <li key={index}>{element}</li>
+                })}</p>
         </div>
     </div>
   )
