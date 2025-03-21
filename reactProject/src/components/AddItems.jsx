@@ -5,7 +5,9 @@ function AddItems() {
     const [skills,SetSkills]=useState([])
     const inputRef=useRef()
     function handleAddEvent(){
-        SetSkills((prev)=>[...prev,inputRef.current.value])
+        if(inputRef.current.value!=''){
+            SetSkills((prev)=>[...prev,inputRef.current.value])
+        }
         setInputText('N/A')
     }
     const clear=()=>{
@@ -27,7 +29,7 @@ function AddItems() {
 
         </div>
         <div className='overflow-auto border-2 border-amber-200 rounded-3xl   h-[30vh] w-[50vw] flex justify-center items-center'>
-            <p className='  w-[40vw] p-[10px]'>Your Skill List:{skills.map((element,index)=>{
+            <p className='  w-[40vw] p-[10px]'>Your Skill List:{ skills.map((element,index)=>{
                         return <li key={index}>{element}</li>
                 })}</p>
         </div>
