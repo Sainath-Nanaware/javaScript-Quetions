@@ -406,21 +406,42 @@ const closure=()=>{
 // let b=a
 // console.log(b);
 
-function removeZero(arr1){
-  for(let i = arr1.length-1;i>=0;i--){
-      if(arr1[i]===0){
-          arr1.pop()
-      }else{
-        break;
-      }
+// function removeZero(arr1){
+//   for(let i = arr1.length-1;i>=0;i--){
+//       if(arr1[i]===0){
+//           arr1.pop()
+//       }else{
+//         break;
+//       }
 
+//   }
+//   console.log(arr1.sort());
+  
+// }
+
+
+// arr1=[21,0,54,8,7,0,0,0]
+
+// arr2=[0,0,0,54,88,99]
+// removeZero(arr1)
+
+
+function findLargset(arr){
+  var max=0
+  var secondMax=0
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]>max){
+      secondMax=max
+      max=arr[i]
+    }
+    if(arr[i]>secondMax && arr[i]<max){
+      secondMax=arr[i]
+    }
   }
-  console.log(arr1.sort());
+  console.log("max:"+max+"      second Max:"+secondMax);
   
 }
 
 
-arr1=[21,0,54,8,7,0,0,0]
-
-arr2=[0,0,0,54,88,99]
-removeZero(arr1)
+const arr=[55,99,88,5,66,87,77,22]
+findLargset(arr)
