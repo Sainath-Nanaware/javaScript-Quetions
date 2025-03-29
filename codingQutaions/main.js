@@ -438,7 +438,7 @@ function findLargset(arr){
       secondMax=arr[i]
     }
   }
-  console.log("max:"+max+"      second Max:"+secondMax);
+  console.log("max:"+max+"second Max:"+secondMax);
   
 }
 
