@@ -426,22 +426,47 @@ const closure=()=>{
 // removeZero(arr1)
 
 
-function findLargset(arr){
-  var max=0
-  var secondMax=0
-  for(let i=0;i<arr.length;i++){
-    if(arr[i]>max){
-      secondMax=max
-      max=arr[i]
-    }
-    if(arr[i]>secondMax && arr[i]<max){
-      secondMax=arr[i]
-    }
-  }
-  console.log("max:"+max+"second Max:"+secondMax);
+// function findLargset(arr){
+//   var max=0
+//   var secondMax=0
+//   for(let i=0;i<arr.length;i++){
+//     if(arr[i]>max){
+//       secondMax=max
+//       max=arr[i]
+//     }
+//     if(arr[i]>secondMax && arr[i]<max){
+//       secondMax=arr[i]
+//     }
+//   }
+//   console.log("max:"+max+"second Max:"+secondMax);
   
+// }
+
+
+// const arr=[55,99,88,5,66,87,77,22]
+// findLargset(arr)
+
+
+
+//display dublicate character from string 
+
+
+const checkDublicate=(str)=>{
+    var frequencyMap={}
+    for(let char of str){
+      frequencyMap[char]=(frequencyMap[char] || 0)+1
+    }
+    console.log(frequencyMap);
+    for(let key in frequencyMap){
+      if(frequencyMap[key]>1){
+        console.log("dublicate charater is:"+key+"  number of redndant:"+frequencyMap[key]);
+      }
+    }
+    
 }
 
 
-const arr=[55,99,88,5,66,87,77,22]
-findLargset(arr)
+
+const str="gttrsfccciy"
+
+checkDublicate(str);
