@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import UserDetails from './pages/UserDetails'
 import Submit from './pages/Submit'
 import AddItems from './components/AddItems'
+import FormField from './components/FormField'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,8 @@ function App() {
         <Route path='/submit' element={<Submit/>}/>
       </Routes> */}
       {/* for practice purpose */}
-      <AddItems/>
+      {/* <AddItems/> */}
+      <FormField/>
     </>
   )
 }
