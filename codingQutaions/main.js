@@ -451,22 +451,27 @@ const closure=()=>{
 //display dublicate character from string 
 
 
-const checkDublicate=(str)=>{
-    var frequencyMap={}
-    for(let char of str){
-      frequencyMap[char]=(frequencyMap[char] || 0)+1
-    }
-    console.log(frequencyMap);
-    for(let key in frequencyMap){
-      if(frequencyMap[key]>1){
-        console.log("dublicate charater is:"+key+"  number of redndant:"+frequencyMap[key]);
-      }
-    }
+// const checkDublicate=(str)=>{
+//     var frequencyMap={}
+//     for(let char of str){
+//       frequencyMap[char]=(frequencyMap[char] || 0)+1
+//     }
+//     console.log(frequencyMap);
+//     for(let key in frequencyMap){
+//       if(frequencyMap[key]>1){
+//         console.log("dublicate charater is:"+key+"  number of redndant:"+frequencyMap[key]);
+//       }
+//     }
     
-}
+// }
 
 
 
-const str="gttrsfccciy"
+// const str="gttrsfccciy"
 
-checkDublicate(str);
+// checkDublicate(str);
+
+
+const str="bhjbshvb"
+
+console.log(str.split('').reverse().join(''));
