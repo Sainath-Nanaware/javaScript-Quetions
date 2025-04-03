@@ -7,6 +7,7 @@ import UserDetails from './pages/UserDetails'
 import Submit from './pages/Submit'
 import AddItems from './components/AddItems'
 import FormField from './components/FormField'
+import InterViewQuation from './components/InterViewQuation'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +22,8 @@ function App() {
       </Routes> */}
       {/* for practice purpose */}
       {/* <AddItems/> */}
-      <FormField/>
+      {/* <FormField/> */}
+      <InterViewQuation/>
     </>
   )
 }
